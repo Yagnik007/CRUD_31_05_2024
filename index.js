@@ -15,7 +15,7 @@ app.use("/api/products", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://yagnik:yagnik07@cruddb.rvc9ttm.mongodb.net/crud?retryWrites=true&w=majority&appName=CRUDDB"
+    "MONGO_URI"
   )
   .then(() => {
     console.log(`connected to database!`);
